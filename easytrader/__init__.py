@@ -6,5 +6,5 @@ from .yhtrader import YHTrader
 from .yjbtrader import YJBTrader
 from .patrader import PATrader
 
-__version__ = '0.4.2'
+__version__ = '0.4.5'
 __author__ = 'shidenggui'

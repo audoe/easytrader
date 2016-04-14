@@ -1,6 +1,7 @@
 # coding=utf-8
 from .helpers import disable_log
 from .httrader import HTTrader
+from .patrader import PATrader
 from .yhtrader import YHTrader
 from .yjbtrader import YJBTrader
 from .xqtrader import XueQiuTrader
@@ -28,3 +29,5 @@ def use(broker, debug=True):
         return YHTrader()
     if broker.lower() in ['xq', 'XQ', '雪球']:
         return XueQiuTrader()
+    if broker.lower() in ['pa', 'PA', '平安']:
+        return PATrader()
